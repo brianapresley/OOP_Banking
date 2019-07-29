@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Banking", "OOP_Banking\OOP_Banking.csproj", "{C7861F83-E74D-4613-A1B9-06B2398D7B94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopBankingProject", "OOP_Banking\OopBankingProject.csproj", "{C7861F83-E74D-4613-A1B9-06B2398D7B94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
