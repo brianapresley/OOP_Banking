@@ -6,9 +6,16 @@ namespace OopBankingProject {
 
         static void Main(string[] args) {
 
+            Checking ckg = new Checking();
+            ckg.Number = "1005";
+            ckg.Name = "New Checking";
+            ckg.Deposit (4500);
+            ckg.ChkPayment(100, 1000);
+
             Savings sav1 = new Savings();
             sav1.Number = "1004";
             sav1.Name = "New Savings";
+            sav1.ChangeRate(0.02); //Added from savings method to raise/lower IntRate
 
             MoneyMarket MM = new MoneyMarket();
             MM.Number = "1003";
@@ -19,7 +26,7 @@ namespace OopBankingProject {
             decimal MMInterestPaid = MM.CalcInterest(12);
             MM.PayInterest(MMInterestPaid);
 
-            Account[] accounts = new Account[] { sav1, MM };
+            Account[] accounts = new Account[] { sav1, MM, ckg };
 
             foreach (Account acct in accounts) {
                 Console.WriteLine(acct.Print());

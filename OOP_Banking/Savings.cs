@@ -7,6 +7,14 @@ namespace OopBankingProject {
 
         public double IntRate { get; set; } = 0.03; //interest rate of 3%. To calculate amount int= .03/12 x months x balance
 
+        public bool ChangeRate(double chgRate) { //Added a method to raise or lower the interest rate on the savings account
+            if ((this.IntRate + chgRate) < 0) { //To make sure change to IntRate doesn't cause the rate to drop below zero
+                return false;
+            }
+            this.IntRate += chgRate; 
+            return true;
+        }
+
         public override string Print() {
             return base.Print() + $" | {IntRate}";
         }
